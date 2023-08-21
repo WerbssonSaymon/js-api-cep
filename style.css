@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    width: 50vw;
+    width: 50%;
     height: 100%;
     background-color: Gainsboro;
     display: flex;
@@ -21,6 +21,7 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 P {
