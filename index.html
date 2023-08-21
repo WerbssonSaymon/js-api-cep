@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONSULTA DE CEP</h1>
+        <label>DIGITE UM CEP VALIDO</label>
+        <input type="number" id="i_cep">
+        <input  type="submit" value="Buscar" onclick="buscarCep()" id="btn">
+
+        <label>LOGRADOURO</label>
+        <input type="text" id="i_logradouro" readonly>
+        <label>COMPLEMENTO</label>
+        <input type="text" id="i_complemento" readonly>
+        <label>BAIRRO</label>
+        <input type="text" id="i_bairro" readonly>
+        <label>LOCALIDADE</label>
+        <input type="text" id="i_localidade" readonly>
+        <label>UF</label>
+        <input type="text" id="i_uf" readonly>
+        <label>IBGE</label>
+        <input type="text" id="i_ibge" readonly>
+        <label>GIA</label>
+        <input type="text" id="i_gia" readonly>
+        <label>DDD</label>
+        <input type="text" id="i_ddd" readonly>
+        <label>SIAFI</label>
+        <input type="text" id="i_siafi" readonly>
+        <p>API VIACEP</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
