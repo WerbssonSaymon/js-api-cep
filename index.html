@@ -10,28 +10,49 @@
 <body>
     <div class="container">
         <h1>CONSULTA DE CEP</h1>
-        <label>DIGITE UM CEP VALIDO</label>
-        <input type="number" id="i_cep">
-        <input  type="submit" value="Buscar" onclick="buscarCep()" id="btn">
-
-        <label>LOGRADOURO</label>
-        <input type="text" id="i_logradouro" readonly>
-        <label>COMPLEMENTO</label>
-        <input type="text" id="i_complemento" readonly>
-        <label>BAIRRO</label>
-        <input type="text" id="i_bairro" readonly>
-        <label>LOCALIDADE</label>
-        <input type="text" id="i_localidade" readonly>
-        <label>UF</label>
-        <input type="text" id="i_uf" readonly>
-        <label>IBGE</label>
-        <input type="text" id="i_ibge" readonly>
-        <label>GIA</label>
-        <input type="text" id="i_gia" readonly>
-        <label>DDD</label>
-        <input type="text" id="i_ddd" readonly>
-        <label>SIAFI</label>
-        <input type="text" id="i_siafi" readonly>
+            <h3>DIGITE UM CEP VALIDO</h3>
+            <div class="campo__pesquisa">
+                <input type="number" id="i_cep" class="input__pesquisa">
+                <input  type="submit" value="Buscar" onclick="buscarCep()" id="btn">
+            </div>
+        <fieldset class="campo__endereco">
+            <legend>ENDEREÇO</legend>
+            <div class="block__endereco">
+                <label>LOGRADOURO</label>
+            <input type="text" id="i_logradouro" class="input__endereco" readonly>
+            </div>
+            <div class="block__endereco">
+                <label>COMPLEMENTO</label>
+            <input type="text" id="i_complemento" class="input__endereco" readonly>
+            </div>
+            <div class="block__endereco">
+                <label>BAIRRO</label>
+            <input type="text" id="i_bairro" class="input__endereco" readonly>
+            </div>
+            <div class="block__endereco">
+                <label>LOCALIDADE</label>
+            <input type="text" id="i_localidade" class="input__endereco" readonly>
+            </div>          
+        </fieldset>
+        <fieldset class="campo__dados">
+            <legend>DADOS</legend>
+            <div class="block__dados">
+                <label>UF</label> 
+                <input type="text" id="i_uf" class="input__dados" readonly>
+                <label>IBGE</label>
+                <input type="text" id="i_ibge" class="input__dados" readonly>
+            </div>
+            <div class="block__dados">
+                <label>GIA</label>
+                <input type="text" id="i_gia" class="input__dados" readonly>
+                <label>DDD</label>
+                <input type="text" id="i_ddd" class="input__dados" readonly>
+            </div>
+            <div class="block__dados">
+                <label>SIAFI</label>
+                <input type="text" id="i_siafi" class="input__dados" readonly> 
+            </div>          
+        </fieldset>
         <p>API VIACEP</p>
     </div>
     <script src="index.js"></script>
